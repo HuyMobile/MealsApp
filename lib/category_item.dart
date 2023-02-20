@@ -9,8 +9,9 @@ final Color color;
 CategoriesItem(this.id,this.title,this.color);
 
 void selectCategory(BuildContext ctx){
-  Navigator.of(ctx).push(MaterialPageRoute(builder: (_)=>
-  CategoryMealsScreen(id,title)));
+  Navigator.of(ctx).pushNamed(
+  CategoryMealsScreen.routeName,
+      arguments:{'id':id,'title':title} );
 }
   @override
   Widget build(BuildContext context) {
