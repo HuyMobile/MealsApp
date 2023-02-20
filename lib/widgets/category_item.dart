@@ -1,4 +1,4 @@
-import 'package:appmeals/category_meals_screen.dart';
+import 'package:appmeals/screens/category_meals_screen.dart';
 import 'package:flutter/material.dart';
 
 
