@@ -9,7 +9,7 @@ CategoriesItem(this.title,this.color);
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(15),
-      child: Text(title),
+      child: Text(title,style: Theme.of(context).textTheme.titleMedium,),
       decoration: BoxDecoration(gradient:LinearGradient(
         colors: [color.withOpacity(0.7),
         color,],
