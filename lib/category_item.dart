@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 
 
 class CategoriesItem extends StatelessWidget {
+  final String id;
 final String title;
 final Color color;
-CategoriesItem(this.title,this.color);
+CategoriesItem(this.id,this.title,this.color);
 
 void selectCategory(BuildContext ctx){
   Navigator.of(ctx).push(MaterialPageRoute(builder: (_)=>
-  CategoryMealsScreen()));
+  CategoryMealsScreen(id,title)));
 }
   @override
   Widget build(BuildContext context) {
