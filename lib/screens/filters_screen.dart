@@ -38,7 +38,7 @@ class _FilterSceenState extends State<FilterSceen> {
       onChanged: updateValue,
     );
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

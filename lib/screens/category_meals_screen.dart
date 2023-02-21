@@ -51,7 +51,8 @@ bool _loadedInitData=false;
       appBar: AppBar(
         title: Text(categoryTitle!),
       ),
-      body:ListView.builder(
+      body:
+      ListView.builder(
         itemBuilder:(context,index){
           return MealItem(
             id: displayedMeals[index].id,
@@ -60,7 +61,7 @@ bool _loadedInitData=false;
               duration: displayedMeals[index].duration,
               complexity: displayedMeals[index].complexity,
               affordability: displayedMeals[index].affordability,
-            removeItem: _removeMeal,);
+          );
             
         },
         itemCount:displayedMeals.length ,
