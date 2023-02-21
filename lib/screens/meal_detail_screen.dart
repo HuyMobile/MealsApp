@@ -78,7 +78,10 @@ Widget buildContainer(Widget child){
             )
           ],
         ),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(child: Icon(Icons.delete),onPressed: (){
+        Navigator.of(context).pop(mealId);  // nhảy vao selecMail đoạn then
+      },) ,
     );
 
     return const Placeholder();
